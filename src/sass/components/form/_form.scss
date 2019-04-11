@@ -23,13 +23,9 @@
     font-size: inherit;
     transition: border-color 0.8s;
 
-    &:focus {
-      border: 2px solid $primary-color;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
+    //&:focus {
+    //  border: 2px solid $primary-color;
+    //}
 
     &::placeholder {
       font-weight: 300;

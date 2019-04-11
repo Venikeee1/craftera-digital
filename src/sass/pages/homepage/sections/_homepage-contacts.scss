@@ -184,3 +184,42 @@
     }
   }
 }
+
+.label-square {
+  display: block;
+  position: relative;
+
+  &__border {
+    position: absolute;
+    background: $primary-color;
+    display: inline-block;
+  }
+
+  &__border-top {
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+  }
+
+  &__border-left {
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 2px;
+  }
+
+  &__border-right {
+    top: 0;
+    right: 0;
+    height: 0;
+    width: 2px;
+  }
+
+  &__border-bottom {
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+  }
+}

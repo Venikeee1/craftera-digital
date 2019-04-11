@@ -4,20 +4,42 @@
             <div class="homepage-contacts__dash"></div>
             <div class="homepage-contacts__links">
                 <a href="/" class="homepage-contacts__link homepage-contacts__tel animation-item">
-                    {#<span class="homepage-contacts__label--mobile">tel: </span>#}
                     {{ contacts.tel }}</a>
                 <a href="/" class="homepage-contacts__link homepage-contacts__mail animation-item">
-                    {#<span class="homepage-contacts__label--mobile">email: </span>#}
                     {{ contacts.mail }}</a>
             </div>
         </div>
         <form class="homepage-contacts__form form">
             <h2 class="homepage-contacts__title primary-title animation-item__form">{{ contacts.title }}</h2>
             <p class="homepage-contacts__description animation-item__form">{{ contacts.description }}</p>
-            <input name="name" type="text" class="form__input animation-item__form" placeholder="Name" required>
-            <input name="tel" type="tel" class="form__input animation-item__form" placeholder="Phone" required>
-            <input name="mail" type="email" class="form__input animation-item__form" placeholder="Email" required>
-            <textarea class="form__input form__textarea animation-item__form" name="message" placeholder="Message"></textarea>
+            <label for="" class="label-square animation-item__form">
+                <input name="name" type="text" class="form__input" placeholder="Name" required>
+                <span class="label-square__border label-square__border-top"></span>
+                <span class="label-square__border label-square__border-bottom"></span>
+                <span class="label-square__border label-square__border-left"></span>
+                <span class="label-square__border label-square__border-right"></span>
+            </label>
+            <label for="" class="label-square animation-item__form">
+                <input name="tel" type="tel" class="form__input" placeholder="Phone" required>
+                <span class="label-square__border label-square__border-top"></span>
+                <span class="label-square__border label-square__border-bottom"></span>
+                <span class="label-square__border label-square__border-left"></span>
+                <span class="label-square__border label-square__border-right"></span>
+            </label>
+            <label for="" class="label-square animation-item__form">
+                <input name="mail" type="email" class="form__input" placeholder="Email" required>
+                <span class="label-square__border label-square__border-top"></span>
+                <span class="label-square__border label-square__border-bottom"></span>
+                <span class="label-square__border label-square__border-left"></span>
+                <span class="label-square__border label-square__border-right"></span>
+            </label>
+            <label for="" class="label-square animation-item__form">
+                <textarea class="form__input form__textarea" name="message" placeholder="Message"></textarea>
+                <span class="label-square__border label-square__border-top"></span>
+                <span class="label-square__border label-square__border-bottom"></span>
+                <span class="label-square__border label-square__border-left"></span>
+                <span class="label-square__border label-square__border-right"></span>
+            </label>
             <div class="btn-perspective">
                 <div class="btn-perspective__inner">
                     <button class="btn btn--light animation-item__form" type="submit">Send</button>

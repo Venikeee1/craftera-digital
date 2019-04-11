@@ -2,7 +2,8 @@ export default class {
     constructor() {
         this.headerContainer = document.querySelector('.header');
         this.themeContaineres = this.headerContainer.querySelectorAll('[data-theme]');
-        this.initLogoHover();
+
+        this.init();
     }
 
     changeTheme(theme) {
@@ -27,5 +28,21 @@ export default class {
                 .staggerTo(bottomLogoLetters, 0.4, {y: 20}, 0.05)
                 .staggerTo(bottomLogoLetters, 0.4, {y: 0}, 0.05, '-=0.3')
         })
+    }
+
+    addHoverContactUs() {
+        const contactUsCircle = document.querySelector('.header__circle');
+        const tl = new TimelineMax();
+        contactUsCircle.addEventListener('mouseenter', () => {
+            tl
+                .to(contactUsCircle, 0.4, {opacity: 0})
+                .to(contactUsCircle, 0, {strokeDashoffset: 352, opacity: 1})
+                .to(contactUsCircle, 1.1, {strokeDashoffset: 704})
+        })
+    }
+
+    init() {
+        this.initLogoHover();
+        this.addHoverContactUs();
     }
 }

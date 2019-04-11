@@ -84,11 +84,6 @@
     stroke: $primary-color;
     transform: rotate(-90deg);
     stroke-dasharray:  352 352;
-    transition: stroke-dashoffset 2s;
-
-    &:hover {
-      stroke-dashoffset: 704;
-    }
   }
 
 }
